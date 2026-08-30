@@ -15,6 +15,13 @@ jobs:
     # CLAUDE.md documents this as the only real test for a reusable
     # workflow — it has no CI of its own). Flip to @main once merged.
     uses: s3ntin3l8/.github/.github/workflows/ci-tauri.yml@feat/ci-tauri-workflow
+    with:
+      # TEMPORARY, for validation only — exercises the coverage/threshold
+      # path for real (a prior version of this had a real, unverified bug).
+      # coverage-fail-under left at '0' (report-only) since this skeleton
+      # has zero tests yet; a real gate would fail on literally any nonzero
+      # threshold until real tests exist.
+      coverage: true
     secrets: inherit # pragma: allowlist secret
 
   dependency-review:
