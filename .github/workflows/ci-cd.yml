@@ -10,11 +10,7 @@ jobs:
   ci-tauri:
     permissions:
       contents: read
-    # TEMPORARY: pointed at a feature branch to validate ci-tauri.yml for
-    # real before it merges to s3ntin3l8/.github's main (that repo's own
-    # CLAUDE.md documents this as the only real test for a reusable
-    # workflow — it has no CI of its own). Flip to @main once merged.
-    uses: s3ntin3l8/.github/.github/workflows/ci-tauri.yml@feat/ci-tauri-workflow
+    uses: s3ntin3l8/.github/.github/workflows/ci-tauri.yml@main
     secrets: inherit # pragma: allowlist secret
 
   dependency-review:
