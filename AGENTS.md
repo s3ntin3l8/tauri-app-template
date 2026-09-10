@@ -17,11 +17,6 @@ for the fuller picture (layout, conventions).
 - **Before pushing, run the full gate:** `make lint && make test && make
   build`. No `typecheck`/`format-check` targets — `cargo fmt --check`/`cargo
   clippy` cover both roles for Rust.
-- **Get a review, and close the loop on it.** Request a Hermes review
-  (`@s3ntin3l8-hermes Review` on the PR, or `make review`). Fixing the code is
-  not enough to address feedback — reply to each inline comment via the
-  GitHub API, then resolve the thread via the GraphQL `resolveReviewThread`
-  mutation.
 - **Run a review pass on your own diff before declaring done.**
 - **File a GitHub issue for anything a plan defers, blocks, or descopes.**
   Before implementing, open one issue per item
