@@ -13,3 +13,10 @@
 
 # Editor/OS cruft
 .DS_Store
+
+# Developer worktrees (per AGENTS.md make wt convention)
+.wt/
+
+# Agent workspace / superpowers plans scratch
+docs/superpowers/
+
