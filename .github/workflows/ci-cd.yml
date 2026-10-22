@@ -10,5 +10,5 @@ jobs:
   ci-tauri:
     permissions:
       contents: read
-    uses: s3ntin3l8/.github/.github/workflows/ci-tauri.yml@main
+    uses: s3ntin3l8/.github/.github/workflows/ci-tauri.yml@ci/ci-tauri-locked
     secrets: inherit # pragma: allowlist secret
