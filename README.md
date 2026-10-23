@@ -64,3 +64,7 @@ clippy` cover both roles here.
 Follows the conventions established by
 [`s3ntin3l8/.github`](https://github.com/s3ntin3l8/.github)'s reusable
 workflows and blueprints.
+
+## License
+
+Copyright (c) 2026 s3ntin3l8 — licensed under [AGPL-3.0-or-later](LICENSE).
